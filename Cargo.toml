@@ -1,0 +1,10 @@
+[package]
+name = "progress-style"
+version = "0.1.0"
+edition = "2024"
+publish = false
+description = "Shared indicatif progress-bar and spinner styling for ix command-line tools"
+license = "MIT"
+
+[dependencies]
+indicatif = "0.18"
