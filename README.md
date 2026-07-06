@@ -1,5 +1,5 @@
 > [!NOTE]
-> [`indexable-inc/progress-style`](https://github.com/indexable-inc/progress-style) is a read-only mirror, generated from [`packages/progress-style`](https://github.com/indexable-inc/index/tree/9043f3253b1a13366f4d43c6b48f8080078a94f9/packages/progress-style) in [`indexable-inc/index`](https://github.com/indexable-inc/index) at commit `9043f3253b1a`. The monorepo is the source of truth: please open issues and pull requests [there](https://github.com/indexable-inc/index). This mirror is regenerated automatically; anything pushed directly here will be overwritten.
+> [`indexable-inc/progress-style`](https://github.com/indexable-inc/progress-style) is a read-only mirror, generated from [`packages/progress-style`](https://github.com/indexable-inc/index/tree/cdbf30fbc2b3d18d95401f32c94c18b9eac178e5/packages/progress-style) in [`indexable-inc/index`](https://github.com/indexable-inc/index) at commit `cdbf30fbc2b3`. The monorepo is the source of truth: please open issues and pull requests [there](https://github.com/indexable-inc/index). This mirror is regenerated automatically; anything pushed directly here will be overwritten.
 
 # progress-style
 
@@ -39,3 +39,14 @@ total (label via `set_prefix`, status line via `set_message`).
 
 - [doc/progress-style/overview.md](https://github.com/indexable-inc/index/blob/main/doc/progress-style/overview.md)
   — from-source documentation.
+
+## Install
+
+`progress-style` is not on crates.io; add it as a git dependency:
+
+```toml
+[dependencies]
+progress-style = { git = "https://github.com/indexable-inc/progress-style" }
+```
+
+Changes: [CHANGELOG.md](CHANGELOG.md), derived from the [monorepo history](https://github.com/indexable-inc/index/commits/main/packages/progress-style) of the package.
