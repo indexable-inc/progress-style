@@ -1,6 +1,41 @@
 > [!NOTE]
-> [`indexable-inc/progress-style`](https://github.com/indexable-inc/progress-style) is a read-only mirror, generated from [`packages/progress-style`](https://github.com/indexable-inc/index/tree/0dca1f37fc28676ddbe46e77747b420b891fd23f/packages/progress-style) in [`indexable-inc/index`](https://github.com/indexable-inc/index) at commit `0dca1f37fc28`. The monorepo is the source of truth: please open issues and pull requests [there](https://github.com/indexable-inc/index). This mirror is regenerated automatically; anything pushed directly here will be overwritten.
+> [`indexable-inc/progress-style`](https://github.com/indexable-inc/progress-style) is a read-only mirror, generated from [`packages/progress-style`](https://github.com/indexable-inc/index/tree/2de62f5d4c92edc675b0f4c8cb5cd411b29d51d1/packages/progress-style) in [`indexable-inc/index`](https://github.com/indexable-inc/index) at commit `2de62f5d4c92`. The monorepo is the source of truth: please open issues and pull requests [there](https://github.com/indexable-inc/index). This mirror is regenerated automatically; anything pushed directly here will be overwritten.
 
 # progress-style
 
-Shared indicatif progress-bar and spinner styling for ix command-line tools
+The shared [`indicatif`](https://docs.rs/indicatif) progress-bar and spinner
+styling for ix command-line tools: one owner for the glyphs, colors, and
+templates, so `search`, `dag-runner`, and future commands render the same
+shape instead of each hand-rolling a template.
+
+The bar fills one-eighth of a cell at a time with block glyphs over a visible
+`░` track (no segmented `=>-` arrow), fronted by a braille spinner:
+
+```text
+⠹ indexing 42/128 ███████████▎░░░░░░░░░░░░░░░░░░░ 00:00:07
+```
+
+## Quickstart
+
+Pick a style, then set the per-run label and status on the bar:
+
+```rust
+use indicatif::ProgressBar;
+
+let bar = ProgressBar::new(128).with_style(progress_style::bar("cyan"));
+bar.set_prefix("indexing");
+for item in work {
+    process(item);
+    bar.inc(1);
+}
+bar.finish();
+```
+
+`bar(accent)` is a determinate bar whose fill color marks the phase;
+`spinner()` is the matching indeterminate spinner for work with no known
+total (label via `set_prefix`, status line via `set_message`).
+
+## Pointers
+
+- [doc/progress-style/overview.md](https://github.com/indexable-inc/index/blob/main/doc/progress-style/overview.md)
+  — from-source documentation.
