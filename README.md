@@ -1,5 +1,5 @@
 > [!NOTE]
-> [`indexable-inc/progress-style`](https://github.com/indexable-inc/progress-style) is a read-only mirror, generated from [`packages/progress-style`](https://github.com/indexable-inc/index/tree/06b696856fc258ac96726e3866b9060e81abbc4b/packages/progress-style) in [`indexable-inc/index`](https://github.com/indexable-inc/index) at commit `06b696856fc2`. The monorepo is the source of truth: please open issues and pull requests [there](https://github.com/indexable-inc/index). This mirror is regenerated automatically; anything pushed directly here will be overwritten.
+> [`indexable-inc/progress-style`](https://github.com/indexable-inc/progress-style) is a read-only mirror, generated from [`packages/progress-style`](https://github.com/indexable-inc/index/tree/4b93223dd2358ff4e91ab3ccd9d3ff4e68ce337c/packages/progress-style) in [`indexable-inc/index`](https://github.com/indexable-inc/index) at commit `4b93223dd235`. The monorepo is the source of truth: please open issues and pull requests [there](https://github.com/indexable-inc/index). This mirror is regenerated automatically; anything pushed directly here will be overwritten.
 
 # progress-style
 
