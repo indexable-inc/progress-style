@@ -1,5 +1,5 @@
 > [!NOTE]
-> [`indexable-inc/progress-style`](https://github.com/indexable-inc/progress-style) is a read-only mirror, generated from [`packages/progress-style`](https://github.com/indexable-inc/index/tree/02e98d12191f7c64e71cf6c2bd7c018ee50c4d2b/packages/progress-style) in [`indexable-inc/index`](https://github.com/indexable-inc/index) at commit `02e98d12191f`. The monorepo is the source of truth: please open issues and pull requests [there](https://github.com/indexable-inc/index). This mirror is regenerated automatically; anything pushed directly here will be overwritten.
+> [`indexable-inc/progress-style`](https://github.com/indexable-inc/progress-style) is a read-only mirror of [`packages/progress-style`](https://github.com/indexable-inc/index/tree/feda2d4bf7893a83121eea864cf5a3505564ec95/packages/progress-style) in [`indexable-inc/index`](https://github.com/indexable-inc/index), taken at `feda2d4bf789`, the last monorepo commit that changed the package. A sha behind the monorepo's HEAD means the package has not changed since, not that the mirror is stale. The monorepo is the source of truth: please open issues and pull requests [there](https://github.com/indexable-inc/index). This mirror is regenerated automatically; anything pushed directly here will be overwritten.
 
 # progress-style
 
